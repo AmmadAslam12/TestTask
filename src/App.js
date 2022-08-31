@@ -6,7 +6,7 @@ import "./App.css";
 
 function App() {
   const [timevar, setTimevar] = useState(
-    parseInt(localStorage.getItem("time"))
+    parseInt(localStorage.getItem("time")) ? parseInt(localStorage.getItem("time")) : 0
   );
   const [title, setTitle] = useState("");
   const [movieData, setMovieData] = useState();
